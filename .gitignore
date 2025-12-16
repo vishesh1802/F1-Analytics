@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# FastF1 Cache (Large binary files)
+cache/
+*.ff1pkl
+*.sqlite
+
+# Data Files - CSV files are INCLUDED (user wants to push them)
+# Uncomment below if you change your mind and want to exclude:
+# *.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Power BI
+*.pbix
+
+# Charts - INCLUDED (user wants to push visualizations)
+# Uncomment below if you change your mind:
+# charts/
+# *.png
+# *.jpg
+# *.jpeg
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+
