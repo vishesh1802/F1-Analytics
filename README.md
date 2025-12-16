@@ -83,33 +83,29 @@ This project applies machine learning techniques to Formula 1 race data from the
 ## 📁 Project Structure
 
 ```
-F1 Analysis/
+F1-Analysis/
 │
-├──  README.md                          # This file
-├──  requirements.txt                    # Python dependencies
+├── 📄 README.md                          # This file
+├── 📄 requirements.txt                    # Python dependencies
+├── 📄 .gitignore                         # Git ignore rules
 │
-├──  F1_Analysis_Project.ipynb          # Jupyter notebook version
-├──  create_charts.py                   # Visualization script
-├──  powerbi_export.py                  # Power BI data export
+├── 📓 F1_Analysis_Project.ipynb          # Complete Jupyter notebook with analysis
 │
-├──  Data Files/
+├── 📊 Data Files (CSV)
 │   ├── raw_laps.csv                      # Raw combined data (8,763 laps)
 │   ├── laptime_dataset.csv               # Preprocessed lap-time data
 │   ├── pit_dataset.csv                   # Preprocessed pit-stop data
 │   ├── driver_stats.csv                  # Driver statistics
 │   └── driver_clusters.csv               # Driver clusters with labels
 │
-├──  charts/                             # Generated visualizations
-│   ├── chart1_lap_time_distribution.png
-│   ├── chart2_top_drivers.png
-│   ├── chart3_temperature_effects.png
-│   ├── chart4_pit_stop_patterns.png
-│   ├── chart5_driver_clustering.png
-│   ├── chart6_race_comparison.png
-│   └── chart7_correlation_heatmap.png
-│
-└──   cache/                              # FastF1 cached data
-    └── 2023/                              # Race data cache
+└── 📈 charts/                             # Generated visualizations
+    ├── chart1_lap_time_distribution.png
+    ├── chart2_top_drivers.png
+    ├── chart3_temperature_effects.png
+    ├── chart4_pit_stop_patterns.png
+    ├── chart5_driver_clustering.png
+    ├── chart6_race_comparison.png
+    └── chart7_correlation_heatmap.png
 ```
 
 ---
@@ -158,20 +154,7 @@ python -c "import fastf1, pandas, sklearn, xgboost; print(' All packages install
 
 ## ⚡ Quick Start
 
-### Option 1: Run Python Script
-
-```bash
-python f1_project.py
-```
-
-This will:
-1. Download/load F1 race data (first run: ~5-15 min, subsequent: ~30 sec)
-2. Preprocess data into 3 datasets
-3. Train 9 machine learning models
-4. Evaluate and compare all models
-5. Generate CSV files with results
-
-### Option 2: Use Jupyter Notebook
+### Use Jupyter Notebook (Recommended)
 
 ```bash
 # Start Jupyter
@@ -181,13 +164,13 @@ jupyter notebook
 # Run all cells (Cell → Run All)
 ```
 
-### Option 3: Generate Visualizations
-
-```bash
-python create_charts.py
-```
-
-This creates 7 charts in the `charts/` folder.
+This will:
+1. Download/load F1 race data (first run: ~5-15 min, subsequent: ~30 sec)
+2. Preprocess data into 3 datasets
+3. Train 9 machine learning models
+4. Evaluate and compare all models
+5. Generate CSV files with results
+6. All visualizations are included in the notebook
 
 ---
 
@@ -195,26 +178,25 @@ This creates 7 charts in the `charts/` folder.
 
 ### Basic Usage
 
-**1. Run the main analysis:**
+**1. Open the Jupyter Notebook:**
 ```bash
-python f1_project.py
+jupyter notebook F1_Analysis_Project.ipynb
 ```
 
-**2. View results:**
-- Check console output for model metrics
+**2. Run all cells:**
+- Go to `Cell → Run All`
+- Wait for analysis to complete (~5-15 min first time, ~30 sec after)
+
+**3. View results:**
+- Check notebook output for model metrics
 - Open CSV files to explore data
-- View charts in `charts/` folder
-
-**3. Generate Power BI datasets:**
-```bash
-python powerbi_export.py
-```
+- View charts in `charts/` folder (generated automatically)
 
 ### Advanced Usage
 
 #### Customize Races
 
-Edit `f1_project.py` to change the race list:
+Edit the notebook cell with the `RACES` configuration:
 
 ```python
 RACES = [
@@ -226,7 +208,7 @@ RACES = [
 
 #### Modify Models
 
-Edit model parameters in the respective functions:
+Edit model parameters directly in the notebook cells:
 
 ```python
 # Example: Change XGBoost parameters
@@ -242,7 +224,7 @@ pipeline_xgb = Pipeline([
 
 #### Custom Visualizations
 
-Modify `create_charts.py` to create custom visualizations or add new charts.
+Add new visualization cells in the notebook or modify existing chart generation code.
 
 ---
 
@@ -284,6 +266,24 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 
 ##  Documentation
 
+<<<<<<< HEAD
+=======
+### Main Documentation
+
+- **README.md** (this file) - Complete project overview and usage guide
+- **F1_Analysis_Project.ipynb** - Interactive notebook with detailed explanations and code
+
+### Data Files
+
+All processed datasets are available as CSV files:
+- `raw_laps.csv` - Complete raw data from 8 races
+- `laptime_dataset.csv` - Preprocessed data for regression
+- `pit_dataset.csv` - Preprocessed data for classification
+- `driver_stats.csv` - Driver performance statistics
+- `driver_clusters.csv` - Driver clustering results
+
+---
+>>>>>>> 1608f67 (Update README to match GitHub repository structure)
 
 ## 🛠️ Technologies Used
 
@@ -323,14 +323,15 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 - **`run_driver_clustering()`** - Applies 3 clustering algorithms
 
 ### 4. Visualization
-- **`create_charts.py`** - Generates 7 comprehensive charts
+- **Charts generated in notebook** - 7 comprehensive charts
 - Interactive data exploration
 - Publication-ready visualizations
+- All charts saved to `charts/` folder
 
-### 5. Power BI Integration
-- **`powerbi_export.py`** - Exports Power BI-ready datasets
+### 5. Data Export
+- CSV files with all processed data
+- Ready for Power BI or other tools
 - Includes predictions and model results
-- Ready for dashboard creation
 
 ---
 
@@ -359,7 +360,7 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 
 ### Key Settings
 
-Edit these in `f1_project.py`:
+Edit these in the Jupyter notebook (`F1_Analysis_Project.ipynb`):
 
 ```python
 # Cache directory for FastF1
@@ -487,9 +488,60 @@ This project is open source and available under the MIT License.
 
 
 
+<<<<<<< HEAD
+=======
+- **FastF1** - For providing excellent F1 data API
+- **Formula 1** - For making race data available
+- **Scikit-learn** - For comprehensive ML tools
+- **Open Source Community** - For amazing Python libraries
 
 ---
 
-**Ready to analyze F1 race data? Start with `python f1_project.py`!** 🏎️💨
+## 📞 Support
+
+For questions or issues:
+1. Check the documentation files
+2. Review the code comments
+3. Check FastF1 documentation: https://theoehrly.github.io/FastF1/
+
+---
+
+## 🎯 Next Steps
+
+1. ✅ Install dependencies: `pip install -r requirements.txt`
+2. ✅ Open the notebook: `jupyter notebook F1_Analysis_Project.ipynb`
+3. ✅ Run all cells to execute the complete analysis
+4. ✅ Explore the data in CSV files
+5. ✅ View visualizations in the `charts/` folder
+
+---
+
+## 📊 Project Status
+
+- ✅ Data Collection - Complete
+- ✅ Data Preprocessing - Complete
+- ✅ Model Development - Complete
+- ✅ Model Evaluation - Complete
+- ✅ Visualization - Complete
+- ✅ Documentation - Complete
+- ⏳ Power BI Dashboard - Ready (see guide)
+
+**Overall Completion: 95%** 🎉
+
+---
+
+## 🌟 Highlights
+
+- 🏆 **Best-in-class performance** - 92% R² for lap time prediction
+- 🎯 **Perfect classification** - 100% accuracy for pit stops
+- 📊 **Comprehensive analysis** - 9 models, 3 problem types
+- 📈 **Rich visualizations** - 7 publication-ready charts
+- 📚 **Complete documentation** - Multiple detailed guides
+- 🔄 **Reproducible** - All code and data included
+>>>>>>> 1608f67 (Update README to match GitHub repository structure)
+
+---
+
+**Ready to analyze F1 race data? Open `F1_Analysis_Project.ipynb` in Jupyter!** 🏎️💨
 
 
