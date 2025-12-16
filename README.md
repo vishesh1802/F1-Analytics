@@ -1,4 +1,4 @@
-# 🏎️ F1 Data Analysis Project
+# F1 Data Analysis Project
 
 A comprehensive machine learning project analyzing Formula 1 race data to predict lap times, optimize pit stop strategy, and cluster driver performance.
 
@@ -25,7 +25,7 @@ A comprehensive machine learning project analyzing Formula 1 race data to predic
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 This project applies machine learning techniques to Formula 1 race data from the 2023 season, addressing three critical problems in motorsports analytics:
 
@@ -35,15 +35,15 @@ This project applies machine learning techniques to Formula 1 race data from the
 
 ### Key Achievements
 
-- ✅ **92% accuracy** in lap time prediction (R² = 0.92)
-- ✅ **100% accuracy** in pit stop prediction
-- ✅ **3 meaningful driver clusters** identified
-- ✅ **9 machine learning models** evaluated
-- ✅ **8,763 laps** analyzed from 8 races
+-  **92% accuracy** in lap time prediction (R² = 0.92)
+-  **100% accuracy** in pit stop prediction
+-  **3 meaningful driver clusters** identified
+-  **9 machine learning models** evaluated
+-  **8,763 laps** analyzed from 8 races
 
 ---
 
-## ✨ Features
+## Features
 
 ### Data Collection
 - Automated data download from FastF1 API
@@ -54,14 +54,14 @@ This project applies machine learning techniques to Formula 1 race data from the
 ### Machine Learning Models
 
 **Regression Models:**
-- Linear Regression (baseline)
+- Linear Regression
 - Random Forest Regressor
-- XGBoost Regressor ⭐ (Best: R² = 0.92)
+- XGBoost Regressor  (Best: R² = 0.92)
 
 **Classification Models:**
 - Logistic Regression
 - Random Forest Classifier
-- Gradient Boosting Classifier ⭐ (Best: 100% accuracy)
+- Gradient Boosting Classifier (Best: 100% accuracy)
 
 **Clustering Algorithms:**
 - K-Means Clustering
@@ -85,22 +85,21 @@ This project applies machine learning techniques to Formula 1 race data from the
 ```
 F1 Analysis/
 │
-├── 📄 README.md                          # This file
-├── 📄 requirements.txt                    # Python dependencies
+├──  README.md                          # This file
+├──  requirements.txt                    # Python dependencies
 │
-├── 🐍 f1_project.py                      # Main analysis script
-├── 📓 F1_Analysis_Project.ipynb          # Jupyter notebook version
-├── 📊 create_charts.py                   # Visualization script
-├── 📊 powerbi_export.py                  # Power BI data export
+├──  F1_Analysis_Project.ipynb          # Jupyter notebook version
+├──  create_charts.py                   # Visualization script
+├──  powerbi_export.py                  # Power BI data export
 │
-├── 📊 Data Files/
+├──  Data Files/
 │   ├── raw_laps.csv                      # Raw combined data (8,763 laps)
 │   ├── laptime_dataset.csv               # Preprocessed lap-time data
 │   ├── pit_dataset.csv                   # Preprocessed pit-stop data
 │   ├── driver_stats.csv                  # Driver statistics
 │   └── driver_clusters.csv               # Driver clusters with labels
 │
-├── 📈 charts/                             # Generated visualizations
+├──  charts/                             # Generated visualizations
 │   ├── chart1_lap_time_distribution.png
 │   ├── chart2_top_drivers.png
 │   ├── chart3_temperature_effects.png
@@ -109,23 +108,13 @@ F1 Analysis/
 │   ├── chart6_race_comparison.png
 │   └── chart7_correlation_heatmap.png
 │
-├── 📚 Documentation/
-│   ├── DETAILED_PROJECT_REPORT.md        # Complete project report
-│   ├── PROJECT_EXPLANATION.md            # Project overview
-│   ├── COLUMN_DETAILED_EXPLANATION.md    # Column reference guide
-│   ├── POWERBI_DASHBOARD_GUIDE.md        # Power BI setup guide
-│   ├── REQUIREMENTS_CHECKLIST.md         # Proposal requirements
-│   ├── PROPOSAL_COMPARISON.md            # Requirements vs implementation
-│   ├── ENHANCEMENTS_SUMMARY.md           # Added features
-│   └── RESULTS_ANALYSIS.md                # Results interpretation
-│
-└── 💾 cache/                              # FastF1 cached data
+└──   cache/                              # FastF1 cached data
     └── 2023/                              # Race data cache
 ```
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -162,7 +151,7 @@ This will install:
 ### Step 3: Verify Installation
 
 ```bash
-python -c "import fastf1, pandas, sklearn, xgboost; print('✅ All packages installed successfully!')"
+python -c "import fastf1, pandas, sklearn, xgboost; print(' All packages installed successfully!')"
 ```
 
 ---
@@ -266,14 +255,14 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 |-------|------|-----|-----|
 | Linear Regression | 14.925s | 11.690s | 0.1287 |
 | Random Forest | 4.573s | 2.011s | 0.9182 |
-| **XGBoost** ⭐ | **4.489s** | **1.995s** | **0.9212** |
+| **XGBoost**  | **4.489s** | **1.995s** | **0.9212** |
 
 #### Pit Stop Prediction (Classification)
 | Model | Accuracy | Precision | Recall | F1 | AUC-ROC |
 |-------|----------|-----------|--------|-----|---------|
 | Logistic Regression | 97.8% | 98.5% | 97.7% | 98.1% | 0.9983 |
 | Random Forest | 100% | 100% | 100% | 100% | 1.0000 |
-| **Gradient Boosting** ⭐ | **100%** | **100%** | **100%** | **100%** | **1.0000** |
+| **Gradient Boosting**  | **100%** | **100%** | **100%** | **100%** | **1.0000** |
 
 #### Driver Clustering
 | Algorithm | Silhouette | Davies-Bouldin | Calinski-Harabasz |
@@ -293,23 +282,8 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
-### Comprehensive Guides
-
-- **[DETAILED_PROJECT_REPORT.md](DETAILED_PROJECT_REPORT.md)** - Complete academic-style report
-- **[PROJECT_EXPLANATION.md](PROJECT_EXPLANATION.md)** - Detailed project explanation
-- **[COLUMN_DETAILED_EXPLANATION.md](COLUMN_DETAILED_EXPLANATION.md)** - Every column explained
-- **[POWERBI_DASHBOARD_GUIDE.md](POWERBI_DASHBOARD_GUIDE.md)** - Power BI setup instructions
-
-### Quick References
-
-- **[REQUIREMENTS_CHECKLIST.md](REQUIREMENTS_CHECKLIST.md)** - Proposal requirements status
-- **[PROPOSAL_COMPARISON.md](PROPOSAL_COMPARISON.md)** - Requirements vs implementation
-- **[ENHANCEMENTS_SUMMARY.md](ENHANCEMENTS_SUMMARY.md)** - Added features summary
-- **[RESULTS_ANALYSIS.md](RESULTS_ANALYSIS.md)** - Results interpretation
-
----
 
 ## 🛠️ Technologies Used
 
@@ -330,7 +304,7 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 
 ---
 
-## 🎯 Project Components
+##  Project Components
 
 ### 1. Data Collection (`load_raw_laps()`)
 - Downloads race data from FastF1 API
@@ -360,7 +334,7 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 
 ---
 
-## 📈 Data Overview
+##  Data Overview
 
 ### Dataset Statistics
 - **Total Laps:** 8,763
@@ -381,7 +355,7 @@ Modify `create_charts.py` to create custom visualizations or add new charts.
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 ### Key Settings
 
@@ -403,7 +377,7 @@ SAVE_CSV = True
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -436,7 +410,7 @@ python f1_project.py
 
 ---
 
-## 📝 Example Output
+##  Example Output
 
 ```
 ============================================================
@@ -479,19 +453,19 @@ ANALYSIS COMPLETE!
 
 ---
 
-## 🎓 Learning Outcomes
+##  Learning Outcomes
 
 This project demonstrates:
 
-- ✅ **Data Engineering** - API data collection, cleaning, preprocessing
-- ✅ **Machine Learning** - Regression, classification, clustering
-- ✅ **Model Evaluation** - Comprehensive metrics and comparison
-- ✅ **Data Visualization** - Publication-ready charts
-- ✅ **End-to-End Pipeline** - Complete data science workflow
+-  **Data Engineering** - API data collection, cleaning, preprocessing
+-  **Machine Learning** - Regression, classification, clustering
+-  **Model Evaluation** - Comprehensive metrics and comparison
+-  **Data Visualization** - Publication-ready charts
+-  **End-to-End Pipeline** - Complete data science workflow
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Areas for improvement:
 
@@ -509,65 +483,10 @@ This project is open source and available under the MIT License.
 
 ---
 
-## 👤 Author
 
-**F1 Data Analysis Project**
-- Analysis of 2023 Formula 1 season
-- Machine learning for race strategy optimization
-- Comprehensive evaluation and visualization
 
----
 
-## 🙏 Acknowledgments
 
-- **FastF1** - For providing excellent F1 data API
-- **Formula 1** - For making race data available
-- **Scikit-learn** - For comprehensive ML tools
-- **Open Source Community** - For amazing Python libraries
-
----
-
-## 📞 Support
-
-For questions or issues:
-1. Check the documentation files
-2. Review the code comments
-3. Check FastF1 documentation: https://theoehrly.github.io/FastF1/
-
----
-
-## 🎯 Next Steps
-
-1. ✅ Run the analysis: `python f1_project.py`
-2. ✅ Generate charts: `python create_charts.py`
-3. ✅ Explore the data in CSV files
-4. ✅ Create Power BI dashboard (see guide)
-5. ✅ Read the detailed report for insights
-
----
-
-## 📊 Project Status
-
-- ✅ Data Collection - Complete
-- ✅ Data Preprocessing - Complete
-- ✅ Model Development - Complete
-- ✅ Model Evaluation - Complete
-- ✅ Visualization - Complete
-- ✅ Documentation - Complete
-- ⏳ Power BI Dashboard - Ready (see guide)
-
-**Overall Completion: 95%** 🎉
-
----
-
-## 🌟 Highlights
-
-- 🏆 **Best-in-class performance** - 92% R² for lap time prediction
-- 🎯 **Perfect classification** - 100% accuracy for pit stops
-- 📊 **Comprehensive analysis** - 9 models, 3 problem types
-- 📈 **Rich visualizations** - 7 publication-ready charts
-- 📚 **Complete documentation** - Multiple detailed guides
-- 🔄 **Reproducible** - All code and data included
 
 ---
 
