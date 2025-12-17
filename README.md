@@ -22,31 +22,30 @@ This project applies machine learning techniques to Formula 1 race data from the
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 F1-Analysis/
 │
-├── README.md                          
+├── README.md                          # Project documentation
 ├── requirements.txt                   # Python dependencies
 │
-├── F1_Analysis_Project.ipynb          # Complete Jupyter notebook 
+├── F1_Analysis_Project.ipynb          # Complete Jupyter notebook (main file)
 │
-├── Datasets (CSV)
-│   ├── raw_laps.csv                      # Raw combined lap data (8,763 laps)
-│   ├── laptime_dataset.csv               # Preprocessed data for regression
-│   ├── pit_dataset.csv                   # Preprocessed data for classification
-│   ├── driver_stats.csv                  # Driver performance statistics
-│   └── driver_clusters.csv               # Driver clustering results
+├── raw_laps.csv                       # Raw combined lap data (8,763 laps)
+├── laptime_dataset.csv                # Preprocessed data for regression
+├── pit_dataset.csv                    # Preprocessed data for classification
+├── driver_stats.csv                   # Driver performance statistics
+├── driver_clusters.csv                # Driver clustering results
 │
 └── charts/                            # Generated visualizations
-    ├── chart1_lap_time_distribution.png  # Lap time histogram
-    ├── chart2_top_drivers.png            # Top 10 drivers by average lap time
-    ├── chart3_temperature_effects.png    # Temperature vs lap time analysis
-    ├── chart4_pit_stop_patterns.png      # Pit stop frequency and patterns
-    ├── chart5_driver_clustering.png      # Driver clusters visualization
-    ├── chart6_race_comparison.png        # Performance across races
-    └── chart7_correlation_heatmap.png    # Feature correlation matrix
+    ├── chart1_lap_time_distribution.png
+    ├── chart2_top_drivers.png
+    ├── chart3_temperature_effects.png
+    ├── chart4_pit_stop_patterns.png
+    ├── chart5_driver_clustering.png
+    ├── chart6_race_comparison.png
+    └── chart7_correlation_heatmap.png
 ```
 
 ---
