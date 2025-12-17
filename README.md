@@ -237,7 +237,7 @@ All 7 charts are saved in the `charts/` folder as PNG images:
 
 ---
 
-##  Learning Outcomes
+## Outcomes
 
 This project demonstrates:
 
