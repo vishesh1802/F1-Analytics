@@ -2,25 +2,9 @@
 
 A comprehensive machine learning project analyzing Formula 1 race data to predict lap times, optimize pit stop strategy, and cluster driver performance.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
-[![Status](https://img.shields.io/badge/Status-Completed-success.svg)]()
-
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [How to Run](#how-to-run)
-- [Results](#results)
-- [Technologies Used](#technologies-used)
-- [Data](#data)
-
----
-
-## 🎯 Overview
+## Overview
 
 This project applies machine learning techniques to Formula 1 race data from the 2023 season, addressing three critical problems in motorsports analytics:
 
@@ -30,32 +14,32 @@ This project applies machine learning techniques to Formula 1 race data from the
 
 ### Key Achievements
 
-- ✅ **92% accuracy** in lap time prediction (R² = 0.92)
-- ✅ **100% accuracy** in pit stop prediction
-- ✅ **3 meaningful driver clusters** identified
-- ✅ **9 machine learning models** evaluated
-- ✅ **8,763 laps** analyzed from 8 races
+- **92% accuracy** in lap time prediction (R² = 0.92)
+- **100% accuracy** in pit stop prediction
+- **3 meaningful driver clusters** identified
+- **9 machine learning models** evaluated
+- **8,763 laps** analyzed from 8 races
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 F1-Analysis/
 │
-├── 📄 README.md                          # This file
-├── 📄 requirements.txt                   # Python dependencies
+├── README.md                          
+├── requirements.txt                   # Python dependencies
 │
-├── 📓 F1_Analysis_Project.ipynb          # Complete Jupyter notebook (main file)
+├── F1_Analysis_Project.ipynb          # Complete Jupyter notebook 
 │
-├── 📊 Datasets (CSV)
+├── Datasets (CSV)
 │   ├── raw_laps.csv                      # Raw combined lap data (8,763 laps)
 │   ├── laptime_dataset.csv               # Preprocessed data for regression
 │   ├── pit_dataset.csv                   # Preprocessed data for classification
 │   ├── driver_stats.csv                  # Driver performance statistics
 │   └── driver_clusters.csv               # Driver clustering results
 │
-└── 📈 charts/                            # Generated visualizations
+└── charts/                            # Generated visualizations
     ├── chart1_lap_time_distribution.png  # Lap time histogram
     ├── chart2_top_drivers.png            # Top 10 drivers by average lap time
     ├── chart3_temperature_effects.png    # Temperature vs lap time analysis
@@ -67,7 +51,7 @@ F1-Analysis/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -95,12 +79,12 @@ This will install:
 ### Step 2: Verify Installation
 
 ```bash
-python -c "import fastf1, pandas, sklearn, xgboost; print('✅ All packages installed successfully!')"
+python -c "import fastf1, pandas, sklearn, xgboost; print(' All packages installed successfully!')"
 ```
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### Option 1: Using Jupyter Notebook (Recommended)
 
@@ -157,7 +141,7 @@ Running the notebook will:
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Model Performance Summary
 
@@ -166,14 +150,14 @@ Running the notebook will:
 |-------|------|-----|-----|
 | Linear Regression | 14.925s | 11.690s | 0.1287 |
 | Random Forest | 4.573s | 2.011s | 0.9182 |
-| **XGBoost** ⭐ | **4.489s** | **1.995s** | **0.9212** |
+| **XGBoost**  | **4.489s** | **1.995s** | **0.9212** |
 
 #### Pit Stop Prediction (Classification)
 | Model | Accuracy | Precision | Recall | F1 | AUC-ROC |
 |-------|----------|-----------|--------|-----|---------|
 | Logistic Regression | 97.8% | 98.5% | 97.7% | 98.1% | 0.9983 |
 | Random Forest | 100% | 100% | 100% | 100% | 1.0000 |
-| **Gradient Boosting** ⭐ | **100%** | **100%** | **100%** | **100%** | **1.0000** |
+| **Gradient Boosting**  | **100%** | **100%** | **100%** | **100%** | **1.0000** |
 
 #### Driver Clustering
 | Algorithm | Silhouette Score | Davies-Bouldin Index | Calinski-Harabasz Index |
@@ -193,7 +177,7 @@ Running the notebook will:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Core Libraries
 - **FastF1** (v3.6+) - F1 data API
@@ -212,7 +196,7 @@ Running the notebook will:
 
 ---
 
-## 📈 Data
+## Data
 
 ### Dataset Overview
 
@@ -253,30 +237,22 @@ All 7 charts are saved in the `charts/` folder as PNG images:
 
 ---
 
-## 🎓 Learning Outcomes
+##  Learning Outcomes
 
 This project demonstrates:
 
-- ✅ **Data Engineering** - API data collection, cleaning, preprocessing
-- ✅ **Machine Learning** - Regression, classification, clustering
-- ✅ **Model Evaluation** - Comprehensive metrics and comparison
-- ✅ **Data Visualization** - Publication-ready charts
-- ✅ **End-to-End Pipeline** - Complete data science workflow
+-  **Data Engineering** - API data collection, cleaning, preprocessing
+-  **Machine Learning** - Regression, classification, clustering
+-  **Model Evaluation** - Comprehensive metrics and comparison
+-  **Data Visualization** - Publication-ready charts
+-  **End-to-End Pipeline** - Complete data science workflow
 
 ---
 
-## 📄 License
 
-This project is open source and available under the MIT License.
-
----
-
-## 🔗 Resources
+## Resources
 
 - **FastF1 Documentation**: https://theoehrly.github.io/FastF1/
 - **Scikit-learn Documentation**: https://scikit-learn.org/
 - **XGBoost Documentation**: https://xgboost.readthedocs.io/
 
----
-
-**Ready to analyze F1 race data? Open `F1_Analysis_Project.ipynb` in Jupyter!** 🏎️💨
